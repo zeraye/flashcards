@@ -1,0 +1,11 @@
+@import './fonts.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+body {
+  font-family: 'Oxygen';
+}
