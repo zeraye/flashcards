@@ -1,11 +1,17 @@
 {
   "title": "Countries",
-  "description": "description...",
+  "description": "learn countries in korean",
   "term_locale_code": "ko_KR",
   "definition_locale_code": "pl_PL",
   "flashcards": [
     { "term": "한국", "definition": "Korea Południowa" },
     { "term": "미국", "definition": "USA" },
-    { "term": "중국", "definition": "Chiny" }
+    { "term": "중국", "definition": "Chiny" },
+    { "term": "영국", "definition": "Wielka Brytania" },
+    { "term": "일본", "definition": "Japonia" },
+    { "term": "독일", "definition": "Niemcy" },
+    { "term": "호주", "definition": "Australia" },
+    { "term": "프랑스", "definition": "Francja" },
+    { "term": "캐나다", "definition": "Kanada" }
   ]
 }
