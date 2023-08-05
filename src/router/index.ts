@@ -14,9 +14,9 @@ const router = createRouter({
       component: () => import('@/views/StudySetsView.vue')
     },
     {
-      path: '/flashcard',
-      name: 'flashcard',
-      component: () => import('@/views/FlashcardView.vue')
+      path: '/set',
+      name: 'set',
+      component: () => import('@/views/SetView.vue')
     }
   ]
 })
