@@ -4,14 +4,14 @@
   "term_locale_code": "ko_KR",
   "definition_locale_code": "pl_PL",
   "flashcards": [
-    { "term": "한국", "definition": "Korea Południowa" },
-    { "term": "미국", "definition": "USA" },
-    { "term": "중국", "definition": "Chiny" },
-    { "term": "영국", "definition": "Wielka Brytania" },
-    { "term": "일본", "definition": "Japonia" },
-    { "term": "독일", "definition": "Niemcy" },
-    { "term": "호주", "definition": "Australia" },
-    { "term": "프랑스", "definition": "Francja" },
-    { "term": "캐나다", "definition": "Kanada" }
+    { "id": 0, "streak": 0, "term": "한국", "definition": "Korea Południowa" },
+    { "id": 1, "streak": 0, "term": "미국", "definition": "USA" },
+    { "id": 2, "streak": 0, "term": "중국", "definition": "Chiny" },
+    { "id": 3, "streak": 0, "term": "영국", "definition": "Wielka Brytania" },
+    { "id": 4, "streak": 0, "term": "일본", "definition": "Japonia" },
+    { "id": 5, "streak": 0, "term": "독일", "definition": "Niemcy" },
+    { "id": 6, "streak": 0, "term": "호주", "definition": "Australia" },
+    { "id": 7, "streak": 0, "term": "프랑스", "definition": "Francja" },
+    { "id": 8, "streak": 0, "term": "캐나다", "definition": "Kanada" }
   ]
 }

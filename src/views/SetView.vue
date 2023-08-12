@@ -36,10 +36,15 @@ const prevCard = () => {
   if (cardIndex.value > 0) cardIndex.value--
 }
 
+const updateStreak = (id: number, newStreak: number) => {
+  const foundIndex = set.flashcards.findIndex((card) => card.id === id)
+  set.flashcards[foundIndex].streak = newStreak
+}
+
 const shuffleCards = () => {
   cardIndex.value = 0
   if (isShuffled.value) {
-    set.flashcards = unshuffledFlashcards.slice()
+    set.flashcards.sort((a, b) => a.id - b.id) // from lowest to highest id
   } else {
     for (let i = set.flashcards.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1))
@@ -77,8 +82,12 @@ const shuffleCards = () => {
     :cardIndex="cardIndex"
     :isShuffled="isShuffled"
   />
-  <Learn v-else-if="sceneState === 'learn'" :setSceneState="setSceneState" />
+  <Learn
+    v-else-if="sceneState === 'learn'"
+    :setSceneState="setSceneState"
+    :set="set"
+    :updateStreak="updateStreak"
+  />
   <Test v-else-if="sceneState === 'test'" :setSceneState="setSceneState" />
-  <Match v-else-if="sceneState === 'match'" :setSceneState="setSceneState" />
   <div v-else>Error with `setState`, current value: {{ sceneState }}.</div>
 </template>

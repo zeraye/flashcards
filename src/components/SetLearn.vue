@@ -1,8 +1,11 @@
 <script setup lang="ts">
-const props = defineProps(['setSceneState'])
+import { ref, computed } from 'vue'
+import SetLearnMatch from '@/components/SetLearnMatch.vue'
+
+const props = defineProps(['setSceneState', 'set', 'updateStreak'])
 </script>
 
 <template>
-  <p>learn</p>
+  <SetLearnMatch :set="set" :updateStreak="updateStreak" />
   <button @click="setSceneState('main')">back</button>
 </template>
