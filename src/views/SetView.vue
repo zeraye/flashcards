@@ -5,14 +5,14 @@ import Main from '@/components/SetMain.vue'
 import Flashcards from '@/components/SetFlashcards.vue'
 import Learn from '@/components/SetLearn.vue'
 import Test from '@/components/SetTest.vue'
-import Match from '@/components/SetMatch.vue'
 import set from '@/assets/sets/set.json'
 
-const sceneState: Ref<'main' | 'flashcards' | 'learn' | 'test' | 'match'> = ref('main')
+type sceneType = 'main' | 'flashcards' | 'learn' | 'test'
+
+const sceneState: Ref<sceneType> = ref('main')
 const cardTextState: Ref<'definition' | 'term'> = ref('definition')
 const cardIndex = ref(0)
 const isShuffled = ref(false)
-const unshuffledFlashcards = set.flashcards.slice()
 
 const cardText = computed(() => {
   // To force update on isShuffled value changes
@@ -20,7 +20,7 @@ const cardText = computed(() => {
   return set.flashcards[cardIndex.value][cardTextState.value]
 })
 
-const setSceneState = (newScene: 'main' | 'flashcards' | 'learn' | 'test' | 'match') => {
+const setSceneState = (newScene: sceneType) => {
   sceneState.value = newScene
 }
 

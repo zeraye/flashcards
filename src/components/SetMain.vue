@@ -26,5 +26,4 @@ const props = defineProps([
   <button @click="setSceneState('flashcards')">flashcards</button>
   <button @click="setSceneState('learn')">learn</button>
   <button @click="setSceneState('test')" disabled>test (not implemented)</button>
-  <button @click="setSceneState('match')" disabled>match (not implemented)</button>
 </template>
