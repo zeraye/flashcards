@@ -6,6 +6,6 @@ const props = defineProps(['setSceneState', 'set', 'updateStreak'])
 </script>
 
 <template>
-  <SetLearnMatch :set="set" :updateStreak="updateStreak" />
+  <SetLearnMatch :set="set" :updateStreak="updateStreak" :cardIndex="2" />
   <button @click="setSceneState('main')">back</button>
 </template>
