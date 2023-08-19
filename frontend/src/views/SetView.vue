@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import type { Ref } from 'vue'
-import Main from '@/components/SetMain.vue'
-import Flashcards from '@/components/SetFlashcards.vue'
+import Main from '@/components/set/SetMain.vue'
+import Flashcards from '@/components/set/SetFlashcards.vue'
 import set from '@/assets/sets/set.json'
 import type { SceneType } from '@/types/SceneType'
 
