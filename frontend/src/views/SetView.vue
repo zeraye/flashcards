@@ -3,8 +3,6 @@ import { ref, computed } from 'vue'
 import type { Ref } from 'vue'
 import Main from '@/components/SetMain.vue'
 import Flashcards from '@/components/SetFlashcards.vue'
-import Learn from '@/components/SetLearn.vue'
-import Test from '@/components/SetTest.vue'
 import set from '@/assets/sets/set.json'
 import type { SceneType } from '@/types/SceneType'
 
@@ -81,12 +79,5 @@ const shuffleCards = () => {
     :cardIndex="cardIndex"
     :isShuffled="isShuffled"
   />
-  <Learn
-    v-else-if="sceneState === 'learn'"
-    :setSceneState="setSceneState"
-    :set="set"
-    :updateStreak="updateStreak"
-  />
-  <Test v-else-if="sceneState === 'test'" :setSceneState="setSceneState" />
   <div v-else>Error with `setState`, current value: {{ sceneState }}.</div>
 </template>

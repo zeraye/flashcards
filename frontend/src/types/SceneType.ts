@@ -1,1 +1,1 @@
-export type SceneType = 'main' | 'flashcards' | 'learn' | 'test'
+export type SceneType = 'main' | 'flashcards'
