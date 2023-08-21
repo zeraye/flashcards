@@ -9,7 +9,6 @@ import { RouterLink } from 'vue-router'
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
         <li><RouterLink to="/sets">Study sets</RouterLink></li>
-        <li><RouterLink to="/set">Set</RouterLink></li>
       </ul>
     </nav>
   </header>
