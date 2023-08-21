@@ -14,7 +14,7 @@ const router = createRouter({
       component: () => import('@/views/StudySetsView.vue')
     },
     {
-      path: '/set',
+      path: '/sets/:id',
       name: 'set',
       component: () => import('@/views/SetView.vue')
     }
