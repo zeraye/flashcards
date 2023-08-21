@@ -24,6 +24,5 @@ const props = defineProps([
   <button @click="shuffleCards">shuffle (currently {{ isShuffled ? 'on' : 'off' }})</button>
   <br />
   <button @click="setSceneState('flashcards')">flashcards</button>
-  <button @click="setSceneState('learn')">learn</button>
-  <button @click="setSceneState('test')" disabled>test (not implemented)</button>
+  <button @click="setSceneState('learn')" disabled>learn (not implemented)</button>
 </template>
