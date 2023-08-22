@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 class User(BaseModel):
     username: str
-    sets: Any = None
+    sets: List[Any] = []
 
 
 users: List[User] = [
